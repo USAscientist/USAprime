@@ -10,6 +10,7 @@
 
 			<ui:define name="content">
 		     		<h:form>
+		     				<ui:include src="/popup.xhtml" />
     						<p:focus for="terminal" />
  
     						<p:terminal id="terminal" widgetVar="term" commandHandler="#{terminalView.handleCommand}"
