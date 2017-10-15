@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:h="http://java.sun.com/jsf/html"
-    xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:ui="http://java.sun.com/jsf/facelets"
-    xmlns:p="http://primefaces.org/ui">
-    
- 	<ui:composition template="/WEB-INF/templates/master.xhtml">
-
+<ui:composition
+		template="/WEB-INF/templates/master.xhtml"
+        xmlns="http://www.w3.org/1999/xhtml"
+         xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui">
+ 
 			<ui:define name="content">
 		     		<h:form>
 		     				<ui:include src="/popup.xhtml" />
     						<p:focus for="terminal" />
  
     						<p:terminal id="terminal" widgetVar="term" commandHandler="#{terminalView.handleCommand}"
-                					welcomeMessage="Welcome to PrimeFaces Terminal, how are you today?" />
+                					welcomeMessage="Welcome to PrimeFaces DUMB ASS Terminal, how are you today?" />
  
     						<p:commandButton type="button" value="Clear" icon="ui-icon-trash" onclick="PF('term').clear()" style="margin-top:10px"/>
 					</h:form>
 			</ui:define>
-	</ui:composition>
-	
-</html>
+</ui:composition>

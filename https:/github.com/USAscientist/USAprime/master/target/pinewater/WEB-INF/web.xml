@@ -7,6 +7,7 @@
 		 	<display-name>PrimeFaces App</display-name>
 		  	<welcome-file-list>
 			    <welcome-file>index.xhtml</welcome-file>
+			    <welcome-file>index.html</welcome-file>
 		  </welcome-file-list>
 		  	<servlet>
 		    		<servlet-name>Faces Servlet</servlet-name>
@@ -15,29 +16,20 @@
 		  </servlet>
 		  <servlet-mapping>
 		    		<servlet-name>Faces Servlet</servlet-name>
-		    		<url-pattern>*.jsf</url-pattern>
+		    		<url-pattern>*.xhtml</url-pattern>
+		  </servlet-mapping>
+		  <servlet-mapping>
+		    		<servlet-name>Faces Servlet</servlet-name>
+		    		<url-pattern>*.jsfl</url-pattern>
 		  </servlet-mapping>
 		  <servlet-mapping>
 		    		<servlet-name>Faces Servlet</servlet-name>
 		    		<url-pattern>/faces/*</url-pattern>
 		  </servlet-mapping>
+		  <!-- 
 		  <listener>
 		    		<listener-class>com.sun.faces.config.ConfigureListener</listener-class>
-		</listener>
-		
-		<servlet>
-		    <servlet-name>JerseyServlet</servlet-name>
-		    <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
-		    <init-param>
-	        <param-name>javax.ws.rs.Application</param-name>
-	        <param-value>com.pinewaterneck.rest.MasterConfigurator</param-value>
-	    </init-param>
-	    <load-on-startup>1</load-on-startup>
-		</servlet>
-			    
-		<servlet-mapping>
-			<servlet-name>JerseyServlet</servlet-name>
-			<url-pattern>/*</url-pattern>
-		</servlet-mapping>
+		  </listener>
+		   -->
 	
 </web-app>
