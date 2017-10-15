@@ -10,7 +10,7 @@ import javax.ws.rs.core.Context;
 
 import org.glassfish.jersey.server.ResourceConfig;
 
-@ApplicationPath("/")
+@ApplicationPath("/rest")
 public class MasterConfigurator extends ResourceConfig {
 
 	public MasterConfigurator() {
